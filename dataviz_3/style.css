@@ -88,3 +88,17 @@
 .citado{
     color: rgba(255, 255, 255, .5);
 }
+
+.card{
+    border-color: #020C1B ;
+    background-color: #020C1B;
+}
+
+.rus{
+    color: #B2A4FF;
+}
+
+.usa{
+    color: #D27685;
+}
+

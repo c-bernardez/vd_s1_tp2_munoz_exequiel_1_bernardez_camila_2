@@ -64,11 +64,11 @@
     border-radius:5px;
     padding: 15px;
     height: 150px;
-    width: 85%;
+    width: 90%;
 }
 
 .title h1{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
  }
 
  strong{
@@ -80,11 +80,23 @@
     font-size: 1em;
     color: rgb(255, 255, 255);
     background-color: #020C1B;
-    border: solid rgb(255, 255, 255) 0px;
+    border: solid #020C1B 0px;
     border-radius:5px;
-    padding: 15px;
+    padding: 25px;
 }
 
 .citado{
     color: rgba(255, 255, 255, .5);
+}
+
+.card{
+    border-color: #020C1B ;
+    background-color: #020C1B;
+}
+
+.hombres{
+    color:#37306A;
+}
+.mujeres{
+    color:#E37181
 }

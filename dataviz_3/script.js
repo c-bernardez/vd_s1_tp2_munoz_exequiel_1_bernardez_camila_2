@@ -20,31 +20,40 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         x: d => d[0],
         y: d => 2*(d[1].length)+2.8,
         text: d => d[1].length,
-        fill: d => d[1][0].nacionalidad === "EE.UU." ? "#D27685" : "#37306B",
+        fill: d => d[1][0].nacionalidad === "EE.UU." ? "#D27685" : "#B2A4FF",
         textAnchor: 'middle',
         fontWeight: 'bold',
-        fontSize: 15,
+        fontSize: 20,
       }),
       
       Plot.text(rus, {
         x: d => d[0],
         y: d => -2*(d[1].length)-2.8,
         text: d => d[1].length,
-        fill: d => d[1][0].nacionalidad === "EE.UU." ? "#D27685" : "#37306B",
+        fill: d => d[1][0].nacionalidad === "EE.UU." ? "#D27685" : "#B2A4FF",
         textAnchor: 'middle',
         fontWeight: 'bold',
-        fontSize: 13,
+        fontSize: 20,
       }),
 
       Plot.text(data, {
         x: d => d.anio_mision,
         y: 0,
         text: d => yearFormat(d.anio_mision),
-        fill: 'black',
+        fill: 'white',
         textAnchor: 'middle',
         fontWeight: '150',
-        fontSize: 12,
+        fontSize: 15,
       }),
+
+      // Plot.text(["Cantidad de astronautas por año"], {
+      //   x: 2010-0.2,
+      //   y: 48,
+      //   fill: 'white',
+      //   textAnchor: 'start',
+      //   fontWeight: '150',
+      //   fontSize: 20,
+      // }),
 
 
       // Plot.ruleY([0], {
@@ -76,14 +85,19 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     //   label: null,
     //   axis: null
     // },
-    marginLeft: 70,
+    style: {
+      background: "#020C1B",
+      color: "#020C1B"},
+    height:30,
+    marginLeft: 50,
+    marginRight:35,
     marginTop:70,
     marginBottom: 70,
     height:1.2*460,
     width: 1.2*690,
     color: {
       //range: ['hsl(240,85%,60%)','hsl(0, 85%, 50%)',]
-      range:['#D27685','#37306B']
+      range:['#D27685','#B2A4FF']
     },
   })
 

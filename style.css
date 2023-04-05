@@ -287,17 +287,18 @@ body {
   }
 
   .scroll-btn {
-    position: relative;
-    
     bottom: 20px;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
   }
   
+  a{
+    color:white;
+    text-decoration: none;
+  }
 
 .grid{
     display: grid;
@@ -326,6 +327,7 @@ h2{
     text-align: left;
     font-family: 'Inter', sans-serif;
     color: #d3d3d3;
+    margin-bottom: 5%;
 }
 .title {
     grid-area: title;
@@ -370,4 +372,12 @@ h2{
 
 .row {
 	--bs-gutter-x: -4.5rem;
+}
+
+.card-title{
+  font-size: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

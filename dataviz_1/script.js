@@ -40,7 +40,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           }
           ))),
       
-      Plot.ruleY([0],{stroke:"white"}),
+      Plot.ruleY([0],{stroke:"#E89BA6"}),
           
       Plot.axisX({
         label: null, 
@@ -53,6 +53,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
         tickStroke: 'white',
         ticks: ([2010,2013,2016,2019]),
         fill:'white',
+        stroke: '#E89BA6',
         tickSize:20}),
     ],
     style: {
@@ -67,12 +68,13 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     marginLeft: 60,
     // marginRight: 10,
     marginTop:30,
+    width: 750,
     
     //line: true,
     color: {
       //legend: true,
       //range: ['hsl(300,85%,60%)','hsl(240,85%,60%)'],
-      range:['#F3E8FF','#7149C6']
+      range:['#E89BA6','#7149C6']
       //scheme: 'Turbo',
     },
   })
